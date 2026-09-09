@@ -1,0 +1,26 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="#F6F8FC" android:fillViewport="true" android:layoutDirection="rtl">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+  <LinearLayout android:layout_width="match_parent" android:layout_height="150dp" android:gravity="center" android:orientation="vertical" android:background="#0C2342">
+   <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="↻  ری‌پست‌یار" android:textColor="#FFFFFF" android:textSize="30sp" android:textStyle="bold"/>
+   <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="بازنشر آسان پست و ریلز" android:textColor="#BAC6D7" android:textSize="15sp"/>
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:background="@drawable/card" android:orientation="vertical">
+   <TextView android:id="@+id/fileName" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="هنوز فایلی انتخاب نشده" android:textColor="#152B4A" android:textSize="16sp"/>
+   <Button android:id="@+id/pickButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="انتخاب از گالری"/>
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="16dp" android:background="@drawable/card" android:orientation="vertical">
+   <EditText android:id="@+id/linkInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="لینک پست یا ریلز اینستاگرام" android:inputType="textUri"/>
+   <Button android:id="@+id/captionButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="دریافت کپشن"/>
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="16dp" android:background="@drawable/card" android:orientation="vertical">
+   <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="کپشن اصلی ناشر" android:textStyle="bold" android:textSize="18sp" android:textColor="#102947"/>
+   <EditText android:id="@+id/captionInput" android:layout_width="match_parent" android:layout_height="150dp" android:gravity="top|start" android:hint="کپشن دریافت‌شده یا متن دلخواه شما…" android:inputType="textMultiLine"/>
+   <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="هشتگ‌ها" android:textStyle="bold" android:textSize="18sp"/>
+   <EditText android:id="@+id/hashtagsInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="#موسیقی  #موزیک_ایرانی  #ریلز  #حال_خوب"/>
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginHorizontal="16dp" android:layout_marginBottom="24dp" android:orientation="horizontal">
+   <Button android:id="@+id/copyButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="کپی کپشن"/>
+   <Button android:id="@+id/instagramButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.4" android:text="باز کردن اینستاگرام"/>
+  </LinearLayout>
+ </LinearLayout>
+</ScrollView>
